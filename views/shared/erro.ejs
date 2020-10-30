@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<title>Overbite</title>
+	
+	<link rel="stylesheet" href="<%- root %>/lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<%- root %>/lib/font-awesome/css/font-awesome-1.0.2.min.css" />
+	<link rel="stylesheet" href="<%- root %>/css/style.css" />
+	
+	<script type="text/javascript" src="<%- root %>/lib/jquery/js/jquery-1.0.1.min.js"></script>
+	<script type="text/javascript" src="<%- root %>/lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="painel-msg">
+		<div class="panel panel-default no-margin-bottom">
+			<div class="panel-body">
+				<h1><%=((typeof mensagem === "undefined" || !mensagem) ? "A página que você está tentando acessar não foi encontrada" : mensagem) %> 😢</h1>
+				<!--
+					<% if (typeof erro !== "undefined" && erro) { %>
+					<% if (erro.status) { %>
+						<%= erro.status %>
+					<% } %>
+					
+					<% if (erro.stack) { %>
+						<%= erro.stack %>
+					<% } %>
+					<% } %>
+				-->
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
