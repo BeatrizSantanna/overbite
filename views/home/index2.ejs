@@ -1,499 +1,257 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
-	<title>Overbite</title>
-	
-	<link rel="stylesheet" href="<%- root %>/lib/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="<%- root %>/lib/font-awesome/css/font-awesome-1.0.2.min.css" />
-	<link rel="stylesheet" href="<%- root %>/css/style.css" />
-	
-	<script type="text/javascript" src="<%- root %>/lib/jquery/js/jquery-1.0.1.min.js"></script>
-	<script type="text/javascript" src="<%- root %>/lib/bootstrap/js/bootstrap.min.js"></script>
-
+	<%- include("cabecalho") %>
 </head>
 <body>
 
-<div>
 	<nav class="barra">
-	<div class="container-fluid text-center">
-		<div class="row">
-			<div class="col-sm-5">
-				<div class="row">
-					<div class="col-sm-4">
-						<b class="link-cabecalho" href="#sobre">
-							SOBRE
-						</b>
-					</div>
-					<div class="col-sm-4">
-						<b class="link-cabecalho" href="#times">
-							TIMES
-						</b>
-					</div>
-					<div class="col-sm-4">
-						<b class="link-cabecalho" href="#patrocinadores">
-							PATROCINADORES
-						</b>
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-4">
+							<a class="link-cabecalho" href="#sobre">
+								SOBRE
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a class="link-cabecalho" href="#times">
+								TIMES
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a class="link-cabecalho" href="#patrocinadores">
+								PATROCINADORES
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-2">
-				<img class="logo" src="Imagens/logo_overbite.png" />
-			</div>
-			<div class="col-sm-5">
-				<div class="row">
-					<div class="col-sm-4">
-						<b class="link-cabecalho" href="#noticia">
-							NOTÍCIAS
-						</b>
-					</div>
-					<div class="col-sm-4">
-						<b class="link-cabecalho" href="#jogo">
-							AGENDA
-						</b>
-					</div>
-					<div class="col-sm-4">
-						<b class="link-cabecalho" href="#social">
-							CONTATOS
-						</b>
+				<div class="col-sm-2">
+					<img class="logo" src="<%- root %>/imagens/logo_overbite.png" />
+				</div>
+				<div class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-4">
+							<a class="link-cabecalho" href="#noticia">
+								NOTÍCIAS
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a class="link-cabecalho" href="#jogo">
+								AGENDA
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a class="link-cabecalho" href="#social">
+								CONTATOS
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
 	</nav>
-	
-	<div class="espaco"></div>
-	
-	<div id="noticia" class="conteudo-interno">
-		<div id="carrossel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carrossel" data-slide-to="0" class="active"></li>
-				<li data-target="#carrossel" data-slide-to="1"></li>
-				<li data-target="#carrossel" data-slide-to="2"></li>
-			</ol>
-	
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="imagens/Slides_Overbite_8.png" />
-				</div>
-				<div class="item">
-					<img src="imagens/Slides_Overbite_4.png"/>
-				</div>
-				<div class="item">
-					<img src="imagens/Sorteio.png"/>
-				</div>
-			</div>
-	
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carrossel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Anterior</span>
-			</a>
-			<a class="right carousel-control" href="#carrossel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Próximo</span>
-			</a>
-		</div>
-	</div>
-	<a name = "noticia"></a>
 
-	<div id ="sobre" class="container-fluid text-justify">
-		<div class="row">
-			<div class="col-sm-8">
-				<b class="titulo">SOBRE</b>
-				<p class="texto">
-					A ESPM Overbite é uma entidade acadêmica de esportes eletrônicos que teve seu início em 2017, ela abrange todas as unidades da ESPM sendo essas São Paulo, Rio grande do Sul e Rio de Janeiro. 
-Atualmente contamos com as modalidades de FIFA onde em 2020 conseguimos prata e bronze em competições; League of Legends sendo vice-campeões em 2016 no segundo split do TUES, Rainbow Six, Counter Strike e acrescentaremos mais duas lines em 2021 sendo essas Call Of Dutty e Valorant.
-A Overbite também realiza diversos projetos e competições como a Copa ESPM um campeonato 2v2 de LOL e o Jaca Champions um campeonato de FIFA online onde tivemos como parceiros a Hyper X , Red Bull e Geek store o mais novo projeto que está em andamento é o BiteCast  sendo esse um Podcast com a premissa de informar e entreter o público sobre a comunidade de jogos eletrônicos nas universidades onde já tivemos como participantes Chico Tattini Head of Partnership da INTZ e o E-sport maneger da RED Vicenzzo Mandetta.
-Com tudo isso que produzimos e desenvolvemos a Overbite busca transformar jogadores atuais em entusiastas e desenvolver profissionais competentes para o segmento e também agregar para os cenários de Esporte Eletrônico Universitário que está em constante crescimento!
-				</p>
-			</div>
-			<div class="col-sm-4" style="padding-top: 10px;">
-				<img src="Imagens/ftgeral.jpeg"/>
-			</div>
-		</div>
-	</div>
-	<a name = "sobre"></a>
-<div id = "jogo" class="align-middle" >
-	<div  class="text-center titulo" style=" font-size: 20px;">
-		<b>PROXIMOS JOGOS</b>
-	</div>
-	<div class="jogos col">
-		<div class=" container-fluid text-center">
-			<div style=" display: inline-block; margin-top: 10px;"><img src="Imagens/logo_overbite.png" height="250"  /></div>
-			<div style="display: inline-block"><img src="Imagens/vs.png" height="200" style="margin-left: 20px; margin-right: 20px;" /></div>
-			<div style="display: inline-block"><img src="Imagens/LogoFGV.png" height="250"  /></div>
-			<div style="clear:both; margin-bottom: 10px;">conteudo aqui</div>
-		</div>
-	</div>
-	  
-	<div class="jogos col">
-		<div class=" container-fluid text-center">
-			<div style=" display: inline-block; margin-top: 10px;"><img src="Imagens/logo_overbite.png" height="250"  /></div>
-			<div style="display: inline-block"><img src="Imagens/vs.png" height="200" style="margin-left: 20px; margin-right: 20px;" /></div>
-			<div style="display: inline-block"><img src="Imagens/LogoMackenzie.png" height="250"  /></div>
-			<div style="clear:both; margin-bottom: 10px;">conteudo aqui</div>
-		</div>
-	</div>
+	<div class="limitador">
+		<div class="espaco"></div>
 
-	<div class="jogos col">
-		<div class=" container-fluid text-center">
-			<div style=" display: inline-block; margin-top: 10px;"><img src="Imagens/logo_overbite.png" height="250"  /></div>
-			<div style="display: inline-block"><img src="Imagens/vs.png" height="200" style="margin-left: 20px; margin-right: 20px;" /></div>
-			<div style="display: inline-block"><img src="Imagens/LogoInsper.png" height="250"  /></div>
-			<div style="clear:both; margin-bottom: 10px;">conteudo aqui</div>
-		</div>
-	</div>
-	
-	<div class="jogos col">
-		<div class=" container-fluid text-center">
-			<div style=" display: inline-block; margin-top: 10px;"><img src="Imagens/logo_overbite.png" height="250"  /></div>
-			<div style="display: inline-block"><img src="Imagens/vs.png" height="200" style="margin-left: 20px; margin-right: 20px;" /></div>
-			<div style="display: inline-block"><img src="Imagens/LogoFecap.png" height="250"  /></div>
-			<div style="clear:both; margin-bottom: 10px;">conteudo aqui</div>
-		</div>
-	</div>
-</div>
-<a name = "jogo"></a>
-	<div class="espaco2"></div>
-
-<a name = "time"></a>
-
-<div id = "times" class="align-middle" >
-	<div class="text-center titulo" >
-		<b>TIMES</b>
-	</div>
-	<div class="time col">
-		<div class=" container-fluid text-center">
-			<div style="margin-top: 10px;"><img src="Imagens/clash.png"/></div>
-			
-		</div>
-	</div>
-
-	<div class="time col">
-		<div class=" container-fluid text-center">
-			<div style=" margin-top: 10px;"><img src="Imagens/counterstrike.png"/></div>
-			
-		</div>
-	</div>
-
-	<div class="time col">
-		<div class=" container-fluid text-center">
-			<div style="margin-top: 10px;"><img src="Imagens/dota2.png"/></div>
-			
-		</div>
-	</div>
-
-	<div class="time col">
-		<div class=" container-fluid text-center">
-			<div style="margin-top: 10px;"><img src="Imagens/fifa.png"   /></div>
-			
-		</div>
-	</div>
-
-	<div class="time col">
-		<div class=" container-fluid text-center">
-			<div style="margin-top: 10px;"><img src="Imagens/LOL.png"   /></div>
-			
-		</div>
-	</div>
-
-	<div class="time col">
-		<div class=" container-fluid text-center">
-			<div style="margin-top: 10px;"><img src="Imagens/R6.png"   /></div>
-			
-		</div>
-	</div>
-	 
-	<a name = "times"></a>
-	<div class="espaco2"></div>
-	<nav class="barra2"></nav>
-	<div class="espaco2"></div>
-
-
-
-	<div id="patrocinadores" class="container-fluid text-center titulo" style="margin-top: 150px; margin-bottom: 50px;">
-		<b>PATROCINADORES</b>
-	</div>
-	<div class="container-fluid conteudo-interno text-center">
-		<div class="row">
-			<div class="col-sm-2">
-				
-			</div>
-			<div class="col-sm-2">
-				
-			</div>
-			<div class="col-sm-2">
-				<a href="https://www.espm.br/"><img src="Imagens/LogoEspm.png" height="80" /></a>
-			</div>
-			<div class="col-sm-2">
-				<a href="https://discord.gg/nWKRazB8Y8"><img src="Imagens/Camada1.png"/></a>
-			</div>
-			<div class="col-sm-2">
-				
-			</div>
-			<div class="col-sm-2">
-				
-			</div>
-		</div>
-	</div>
-	<a name = "patrocinadores"></a>
-		<div id="social" class="container-fluid text-center titulo" style="margin-top: 100px; margin-bottom: 50px;">
-			<b>SOCIAL</b>
-		</div>
-	<div class="container-fluid conteudo-interno text-center">
-		<div class="row">
-				<div class="col-sm-2" >
-					<a href="https://twitch.tv/espmoverbite"><img src="Imagens/social1.png" height="80" width="80" /></a>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://www.instagram.com/espmoverbite/"><img src="Imagens/social2.png" height="80" width="80"/></a>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://twitter.com/espmoverbite?s=11"><img src="Imagens/social3.png" height="80" width="80"/></a>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://discord.gg/nWKRazB8Y8"><img src="Imagens/social4.png" height="80" width="80"/></a>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://www.linkedin.com/company/espmoverbite/"><img src="Imagens/social5.png" height="80" width="80"/></a>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://www.facebook.com/esportsespm"><img src="Imagens/social6.png" height="80" width="80"/></a>
-				</div>	
-			</div>
-		</div>
-		<a name = "social"></a>
+		<div id="noticia" class="conteudo-interno">
+			<div id="carrossel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carrossel" data-slide-to="0" class="active"></li>
+					<li data-target="#carrossel" data-slide-to="1"></li>
+					<li data-target="#carrossel" data-slide-to="2"></li>
+				</ol>
 		
-	<div class="espaco2"></div>
-<div style="margin-left: 100px;">
-	<img src="Imagens/logo_overbite.png" height="120" />
-</div>
-<div style="margin-left: 100px; margin-bottom: 25px; color: #059917;">
-	<p class="glyphicon glyphicon-copyright-mark"> 2020 OVERBITE Todos os Direitos Reservados</p>
-</div>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="<%- root %>/imagens/Slides_Overbite_8.jpg" />
+					</div>
+					<div class="item">
+						<img src="<%- root %>/imagens/Slides_Overbite_4.jpg"/>
+					</div>
+					<div class="item">
+						<img src="<%- root %>/imagens/Sorteio.jpg"/>
+					</div>
+				</div>
+		
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carrossel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#carrossel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Próximo</span>
+				</a>
+			</div>
+		</div>
 	
+		<div id="sobre" class="container-fluid text-justify">
+			<div class="row">
+				<div class="col-sm-8">
+					<h1>SOBRE</h1>
+					<p class="texto">
+						A ESPM Overbite é uma entidade acadêmica de esportes eletrônicos que teve seu início em 2017, ela abrange todas as unidades da ESPM sendo essas São Paulo, Rio grande do Sul e Rio de Janeiro. 
+						Atualmente contamos com as modalidades de FIFA onde em 2020 conseguimos prata e bronze em competições; League of Legends sendo vice-campeões em 2016 no segundo split do TUES, Rainbow Six, Counter Strike e acrescentaremos mais duas lines em 2021 sendo essas Call Of Dutty e Valorant.
+						A Overbite também realiza diversos projetos e competições como a Copa ESPM um campeonato 2v2 de LOL e o Jaca Champions um campeonato de FIFA online onde tivemos como parceiros a Hyper X , Red Bull e Geek store o mais novo projeto que está em andamento é o BiteCast  sendo esse um Podcast com a premissa de informar e entreter o público sobre a comunidade de jogos eletrônicos nas universidades onde já tivemos como participantes Chico Tattini Head of Partnership da INTZ e o E-sport maneger da RED Vicenzzo Mandetta.
+						Com tudo isso que produzimos e desenvolvemos a Overbite busca transformar jogadores atuais em entusiastas e desenvolver profissionais competentes para o segmento e também agregar para os cenários de Esporte Eletrônico Universitário que está em constante crescimento!
+					</p>
+				</div>
+				<div class="col-sm-4" style="padding-top: 80px;">
+					<img src="<%- root %>/imagens/ftgeral.jpg"/>
+				</div>
+			</div>
+		</div>
 
-	<style type="text/css">
-		
-		.barra {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 250px;
-			background-image: url(/imagens/camada.png);
-			background-size: 100% 100%;
-			background-repeat: no-repeat;
-			background-position: left top;
-		}
-		.barra2 {
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 250px;
-			background-image: url(/imagens/camada.png);
-			background-size: 100% 100%;
-			background-repeat: no-repeat;
-			background-position: left top;
-			transform: rotate(180deg);
-		}
-		.logo {
-			max-width: 100%;
-			max-height: 150px;
-			margin-top: 20px;
-		}
-		img {
-			max-width: 100%;
-		}
+		<div id="jogo" class="align-middle text-center">
+			<h1 class="text-center">PROXIMOS JOGOS</h1>
 
-		.espaco {
-			height: 250px;
-		}
-		.espaco2 {
-			height: 100px;
-		}
-		.jogos{
-			width: 50%;
-			margin: 0 auto;
-			margin-top: 50px; 
-			border-width: 3px; 
-			border-style: solid; 
-			border-color: white;
-		}
-		.time{
-			width: 50%;
-			margin: 0 auto;
-			margin-top: 50px;
-		}
-		.cabecalho {
-		text-align: center;
-		}
-		.texto{
-			margin-left: 70Spx;
-		}
-	.link-cabecalho {
-		line-height: 170px;
-		color: #447de2;
-		font-size: 15px;
+			<div class="jogos">
+				<img class="logo-agenda" src="<%- root %>/imagens/logo_overbite.png" />
+				<img class="vs" src="<%- root %>/imagens/vs.png" />
+				<img class="logo-agenda" src="<%- root %>/imagens/LogoFGV.png" />
+				<div class="texto-agenda" >conteudo aqui</div>
+			</div>
 
-		
-	}
-	#consultoria {
-		background-color: #31a9df;
-	}
+			<div class="jogos">
+				<img class="logo-agenda" src="<%- root %>/imagens/logo_overbite.png" />
+				<img class="vs" src="<%- root %>/imagens/vs.png" />
+				<img class="logo-agenda" src="<%- root %>/imagens/LogoMackenzie.png" />
+				<div class="texto-agenda" >conteudo aqui</div>
+			</div>
 
-	.consultoria-interno {
-		padding: 80px 20px;
-	}
+			<div class="jogos">
+				<img class="logo-agenda" src="<%- root %>/imagens/logo_overbite.png" />
+				<img class="vs" src="<%- root %>/imagens/vs.png" />
+				<img class="logo-agenda" src="<%- root %>/imagens/LogoInsper.png" />
+				<div class="texto-agenda" >conteudo aqui</div>
+			</div>
 
-	.titulo{
-		color:#447de2;
-		font-size: 20px;
+			<div class="jogos">
+				<img class="logo-agenda" src="<%- root %>/imagens/logo_overbite.png" />
+				<img class="vs" src="<%- root %>/imagens/vs.png" />
+				<img class="logo-agenda" src="<%- root %>/imagens/LogoFecap.png" />
+				<div class="texto-agenda" >conteudo aqui</div>
+			</div>
+		</div>
 
-	}
-	@media screen and (min-width: 768px) {
-		.consultoria-interno {
-			padding: 80px 200px;
-		}
-	}
-		
-	.holder {
-    	display: flex;
-    	justify-content: center;
-	}
-	.imagem {
-  		width: 200px;
-  		margin: 10px;
-  		position: relative;
-  		text-align: center;
-	}
-	.imagem::after {
-  		content: attr(data-title); /* estilo que coloco a legenda no lugar */
-  		position: absolute;
-  		width: 100%;
-  		bottom: -20px;
-  		left: 0;
-	}
+		<div class="espaco2"></div>
 
-	/* Slideshow container */
-	.slideshow-container {
-		width: 704px;
-		height: 330px;
-		top: 500px;
-		left: 300px;
-		position: absolute;
-	}
+		<div id="times" class="align-middle">
+			<h1 class="text-center">TIMES</h1>
+			<div class="time col">
+				<div class=" container-fluid text-center">
+					<div style="margin-top: 10px;"><img src="<%- root %>/imagens/clash.jpg"/></div>
+					
+				</div>
+			</div>
 
-	/* Next & previous buttons */
-	.prev,
-	.next {
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		width: auto;
-		padding: 16px;
-		margin-top: -22px;
-		color: white;
-		font-weight: bold;
-		font-size: 18px;
-		transition: 0.6s ease;
-		border-radius: 0 3px 3px 0;
-		user-select: none;
-	}
+			<div class="time col">
+				<div class=" container-fluid text-center">
+					<div style=" margin-top: 10px;"><img src="<%- root %>/imagens/counterstrike.jpg"/></div>
+				</div>
+			</div>
 
-	/* Position the "next button" to the right */
-	.next {
-		right: 0;
-		border-radius: 3px 0 0 3px;
-	}
+			<div class="time col">
+				<div class=" container-fluid text-center">
+					<div style="margin-top: 10px;"><img src="<%- root %>/imagens/dota2.jpg"/></div>
+					
+				</div>
+			</div>
 
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover,
-	.next:hover {
-		background-color: rgba(0, 0, 0, 0.8);
-	}
+			<div class="time col">
+				<div class=" container-fluid text-center">
+					<div style="margin-top: 10px;"><img src="<%- root %>/imagens/fifa.jpg"   /></div>
+					
+				</div>
+			</div>
 
-	/* Caption text */
-	.text {
-		color: black;
-		font-size: 15px;
-		padding: 8px 12px;
-		position: absolute;
-		bottom: 8px;
-		width: 100%;
-		text-align: center;
-	}
+			<div class="time col">
+				<div class=" container-fluid text-center">
+					<div style="margin-top: 10px;"><img src="<%- root %>/imagens/LOL.jpg"   /></div>
+					
+				</div>
+			</div>
 
-	/* Number text (1/3 etc) */
-	.numbertext {
-		color: #f2f2f2;
-		font-size: 12px;
-		padding: 8px 12px;
-		position: absolute;
-		top: 0;
-	}
+			<div class="time col">
+				<div class=" container-fluid text-center">
+					<div style="margin-top: 10px;"><img src="<%- root %>/imagens/R6.jpg"   /></div>
+					
+				</div>
+			</div>
+		</div>
 
-	.active,
-	.dot:hover {
-		background-color: #717171;
-	}
+		<div class="espaco2"></div>
+	</div>
 
-	/* Fading animation */
-	.fade {
-		-webkit-animation-name: fade;
-		-webkit-animation-duration: 1.5s;
-		animation-name: fade;
-		animation-duration: 1.5s;
-	}
+	<div class="barra2"></div>
 
-	@-webkit-keyframes fade {
-		from {
-			opacity: 0.4;
-		}
+	<div class="limitador">
+		<div class="espaco2"></div>
 
-		to {
-			opacity: 1;
-		}
-	}
+		<h1 id="patrocinadores" class="container-fluid text-center" style="margin-top: 150px; margin-bottom: 50px;">PATROCINADORES</h1>
 
-	@keyframes fade {
-		from {
-			opacity: 0.4;
-		}
+		<div class="container-fluid conteudo-interno text-center">
+			<div class="row">
+				<div class="col-sm-2">
+					
+				</div>
+				<div class="col-sm-2">
+					
+				</div>
+				<div class="col-sm-2">
+					<a href="https://www.espm.br/"><img src="<%- root %>/imagens/LogoEspm.png" /></a>
+				</div>
+				<div class="col-sm-2">
+					<a href="https://discord.gg/nWKRazB8Y8"><img src="<%- root %>/imagens/Camada1.png"/></a>
+				</div>
+				<div class="col-sm-2">
+					
+				</div>
+				<div class="col-sm-2">
+					
+				</div>
+			</div>
+		</div>
 
-		to {
-			opacity: 1;
-		}
-	}
+		<h1 id="social" class="container-fluid text-center" style="margin-top: 100px; margin-bottom: 50px;">SOCIAL</h1>
 
-	/* On smaller screens, decrease text size */
-	@media only screen and (max-width: 300px) {
-		.prev,
-		.next,
-		.text {
-			font-size: 11px;
-		}
-	}
-	#sobre{
-		min-height: 100vh;
-	}
-	#jogo{
-		min-height: 150vh;
-	}
-	#times{
-		min-height: 100vh;
-	}
-	#noticia{
-		min-height: 100vh;
-	}
-	</style>
+		<div class="container-fluid conteudo-interno text-center">
+			<div class="row">
+					<div class="col-sm-2" >
+						<a href="https://twitch.tv/espmoverbite"><img src="<%- root %>/imagens/social1.png" height="80" width="80" /></a>
+					</div>
+					<div class="col-sm-2">
+						<a href="https://www.instagram.com/espmoverbite/"><img src="<%- root %>/imagens/social2.png" height="80" width="80"/></a>
+					</div>
+					<div class="col-sm-2">
+						<a href="https://twitter.com/espmoverbite?s=11"><img src="<%- root %>/imagens/social3.png" height="80" width="80"/></a>
+					</div>
+					<div class="col-sm-2">
+						<a href="https://discord.gg/nWKRazB8Y8"><img src="<%- root %>/imagens/social4.png" height="80" width="80"/></a>
+					</div>
+					<div class="col-sm-2">
+						<a href="https://www.linkedin.com/company/espmoverbite/"><img src="<%- root %>/imagens/social5.png" height="80" width="80"/></a>
+					</div>
+					<div class="col-sm-2">
+						<a href="https://www.facebook.com/esportsespm"><img src="<%- root %>/imagens/social6.png" height="80" width="80"/></a>
+					</div>	
+				</div>
+		</div>
+
+		<div class="espaco2"></div>
+		<div style="margin-left: 100px;">
+			<img src="<%- root %>/imagens/logo_overbite.png" height="120" />
+		</div>
+
+		<div style="margin-left: 100px; margin-bottom: 25px; color: #059917;">
+			<p><span class="glyphicon glyphicon-copyright-mark"></span> 2020 OVERBITE Todos os Direitos Reservados</p>
+		</div>
+	</div>
 
 	<script type="text/javascript">
 	$("#carrossel").carousel();
